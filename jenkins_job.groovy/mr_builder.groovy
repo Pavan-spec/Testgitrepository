@@ -7,7 +7,7 @@ multibranchPipelineJob('mr_builder_multibranch') {
                     //credentialsId("group-gitlab-dps-jenkins")
                     //repoOwner('')
                     repository('Testgitrepository')
-                    repositoryUrl('https://gitlab.kfplc.com/next-gen/kits-bbm-channel-api.git')
+                    repositoryUrl('https://github.com/Pavan-spec/Testgitrepository.git')
 
                     traits {
                         headWildcardFilter {
