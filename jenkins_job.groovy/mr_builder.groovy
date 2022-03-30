@@ -4,14 +4,14 @@ multibranchPipelineJob('mr_builder_multibranch') {
         branchSource {
             source {
                 gitlab {
-                    credentialsId("group-gitlab-dps-jenkins")
-                    repoOwner('')
-                    repository('kits-bbm-channel-api')
+                    //credentialsId("group-gitlab-dps-jenkins")
+                    //repoOwner('')
+                    repository('Testgitrepository')
                     repositoryUrl('https://gitlab.kfplc.com/next-gen/kits-bbm-channel-api.git')
 
                     traits {
                         headWildcardFilter {
-                            includes("decomp /* feature/* ")
+                            includes("decomp /* feature/* master/*")
                             excludes("develop")
                         }
                     }
